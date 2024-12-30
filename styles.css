@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* Heading for Technical Skills */
+.skills-heading {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 30px;  /* Aligns to the left side */
+  padding-top: 0px;   /* Adds space from the top */
+  position: fixed;     /* Keeps it fixed at the top */
+  top: -25px;           /* Space from the top */
+  left: 25px;          /* Space from the left */
+  z-index: 10;         /* Keeps it above other content */
+  margin-bottom: 70px; /* Adds space between the heading and the content */
+}
+
+html, body {
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  display:flex;
+  align-items:center;
+  color:#fff;
+  background:#191814;
+  overflow-y:hidden;
+}
+
+main {
+  display:flex;
+  align-items:center;
+  flex-direction:row;
+  position:absolute;
+  pointer-events:none;
+}
+
+.item {
+  width:500px;
+  height:400px;
+  margin:50px;
+  display:block;
+  position:relative;
+}
+
+.thumb, .overlay {
+  width:500px;
+  height:250px;
+  overflow:hidden;
+}
+
+.overlay {
+  position:absolute;
+  top:-75px;
+  left:0;
+  height:500px;
+  background:radial-gradient(circle at 50%, #fff 9%, rgba(255,255,255,0.25) 48%, rgba(255,255,255,0) 74%);
+  opacity:0;
+  mix-blend-mode:overlay;
+}
+
+.item-info {
+  opacity:0.2;
+  letter-spacing:0.2px;
+}
+
+.thumb, .txt {
+  pointer-events: none;
+}
+
+.hit {
+  background:rgba(0,0,0,0);
+  width:540px;
+  height:440px;
+  position:absolute;
+  top:-20px;
+  left:-20px;
+}
